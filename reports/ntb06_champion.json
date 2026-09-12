@@ -1,0 +1,5 @@
+{
+  "champion_model": "LightGBM (tuned)",
+  "champion_auc_roc": 0.8492,
+  "champion_file": "lightgbm_tuned.joblib"
+}

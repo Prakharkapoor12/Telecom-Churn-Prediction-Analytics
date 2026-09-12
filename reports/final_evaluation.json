@@ -1,0 +1,51 @@
+{
+  "project": "Telecom Customer Churn Prediction",
+  "version": "1.0.0",
+  "created_at": "2026-09-12T23:21:05.852578",
+  "model": {
+    "name": "LightGBM (tuned)",
+    "type": "LightGBMClassifier",
+    "n_features": 41,
+    "train_samples": 5634,
+    "test_samples": 1409
+  },
+  "performance": {
+    "auc_roc": 0.8492,
+    "pr_auc": 0.6628,
+    "brier": 0.1588,
+    "log_loss": 0.4745,
+    "at_optimal_threshold": {
+      "threshold": 0.426,
+      "precision": 0.4984,
+      "recall": 0.8476,
+      "f1": 0.6277,
+      "tp": 317,
+      "fp": 319,
+      "fn": 57,
+      "tn": 716
+    }
+  },
+  "business": {
+    "monthly_value_usd": 329527.0,
+    "retention_rate": 0.4,
+    "offer_cost_usd": 74.44
+  },
+  "top_features": [
+    "contract_type_Two year",
+    "charges_per_tenure",
+    "internet_service_Fiber optic",
+    "contract_type_One year",
+    "tenure_months"
+  ],
+  "nlp_experiment": {
+    "lift": -0.0008,
+    "note": "Pipeline ready for real transcripts."
+  },
+  "artifacts": {
+    "model": "artifacts/champion.joblib",
+    "preprocessor": "artifacts/preprocessor.joblib",
+    "config": "artifacts/production_config.json",
+    "predict_module": "src/predict.py",
+    "api": "api/main.py"
+  }
+}
