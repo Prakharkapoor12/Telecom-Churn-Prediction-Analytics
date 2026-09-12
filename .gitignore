@@ -1,0 +1,72 @@
+# ── Python ────────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Jupyter ───────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Data — never commit raw or processed data ─────────────
+data/raw/
+data/processed/
+data/interim/
+data/external/
+*.csv
+*.parquet
+*.feather
+*.xlsx
+
+# ── Database ──────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Model artifacts ───────────────────────────────────────
+artifacts/
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# ── Environment & secrets ─────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Docker ────────────────────────────────────────────────
+*.log
+docker-compose.override.yml
+
+# ── Reports & outputs (keep structure, ignore content) ────
+reports/figures/
+outputs/
+*.html
+!dashboard/assets/*.css
+!docs/
+
+# ── Distribution / packaging ──────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
