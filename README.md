@@ -4,7 +4,7 @@
 
 ### *From 7,043 raw customer records → eight trained models → one cost-optimal decision → a deployed FastAPI service and a terminal-style analytics dashboard.*
 
-**By Gheffari Nour El Houda**
+**By Prakhar Kapoor**
 
 <br>
 
